@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theo Currie | Mechanical Engineering Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #d1d5db;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #111827;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #111827;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about {
+      max-width: 850px;
+      font-size: 1.05rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      background: white;
+    }
+
+    .project-content {
+      padding: 24px;
+    }
+
+    .project-number {
+      font-size: 0.9rem;
+      color: #6b7280;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .project-content h3 {
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #374151;
+      margin-bottom: 14px;
+    }
+
+    .project-content p {
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #111827;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #374151;
+    }
+
+    .project-detail {
+      margin-top: 70px;
+      padding-top: 30px;
+      border-top: 1px solid #ccc;
+    }
+
+    .project-detail h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .project-detail p {
+      max-width: 850px;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Theo Currie</h1>
+  <h2>Mechanical Engineering | Swansea University</h2>
+  <p>
+    BEng Mechanical Engineering student graduating in 2027,
+    currently on track for First-Class Honours.
+    Interested in mechanical design, simulation, manufacturing
+    and hands-on engineering development.
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="container" id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about">
+    <p>
+      I am a Mechanical Engineering student at Swansea University with a strong
+      interest in mechanical design, engineering simulation and manufacturing.
+      I particularly enjoy projects that involve taking an engineering problem
+      from initial concept through analysis, prototyping and physical testing.
+    </p>
+
+    <br>
+
+    <p>
+      Through my degree I have developed experience using Autodesk Fusion 360,
+      MATLAB, Simulink, finite element analysis, mechanical testing and
+      prototyping across a range of individual and team engineering projects.
+    </p>
+  </div>
+</section>
+
+<section class="container" id="projects">
+  <h2 class="section-title">Selected Engineering Projects</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <img src="wheelchair-project.png" alt="Wheelchair assistive device CAD and prototype">
+
+      <div class="project-content">
+        <div class="project-number">PROJECT 01</div>
+
+        <h3>Wheelchair Assistive Device</h3>
+
+        <div class="skills">
+          Mechanical Design · Fusion 360 · CAD · FMEA · Prototyping
+        </div>
+
+        <p>
+          Designed and developed an adjustable mechanical locking mechanism for
+          a wheelchair-mounted assistive device. The design was developed through
+          calculations, CAD modelling, iterative prototyping, FMEA, simulation
+          and physical testing.
+        </p>
+
+        <a class="button" href="#wheelchair">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="vibration-decay.png" alt="Cantilever beam vibration decay response">
+
+      <div class="project-content">
+        <div class="project-number">PROJECT 02</div>
+
+        <h3>Cantilever Beam Vibration Analysis</h3>
+
+        <div class="skills">
+          MATLAB · LabVIEW · Vibration Analysis · Mechanical Testing · Data Analysis
+        </div>
+
+        <p>
+          Investigated the dynamic response of a cantilever beam using experimental
+          and theoretical methods, analysing accelerometer and force-transducer data
+          to determine natural frequencies and damping behaviour.
+        </p>
+
+        <a class="button" href="#vibration">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="simulink-model.png" alt="PMSM motor control Simulink model">
+
+      <div class="project-content">
+        <div class="project-number">PROJECT 03</div>
+
+        <h3>Power Systems & Motor Control</h3>
+
+        <div class="skills">
+          MATLAB · Simulink · Control Systems · PMSM · Engineering Simulation
+        </div>
+
+        <p>
+          Modelled AC and DC electrical systems using MATLAB and Simulink and
+          investigated a Permanent Magnet Synchronous Motor using Direct Torque
+          Control, analysing torque, speed, flux and transient behaviour.
+        </p>
+
+        <a class="button" href="#controls">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="imeche-project.png" alt="IMechE Design Challenge vehicle">
+
+      <div class="project-content">
+        <div class="project-number">PROJECT 04</div>
+
+        <h3>IMechE Design Challenge</h3>
+
+        <div class="skills">
+          Engineering Design · Manufacturing · Prototyping · Testing · Teamwork
+        </div>
+
+        <p>
+          Worked as part of an engineering team to design, manufacture and test
+          a mechanical device for the IMechE Design Challenge, developing the
+          design through iterative testing and practical engineering decisions.
+        </p>
+
+        <a class="button" href="#imeche">View Project</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="project-detail" id="wheelchair">
+    <h2>01 — Wheelchair Assistive Device</h2>
+
+    <p>
+      This individual project involved developing the mechanical locking and
+      adjustment mechanism for a wheelchair-mounted assistive device.
+      A focused product design specification was created covering structural,
+      usability and manufacturing requirements.
+    </p>
+
+    <p>
+      Several design concepts were assessed before progressing the selected
+      clamp and gear locking mechanism into CAD and prototype development.
+      FMEA was used to identify failure risks including gear slip, clamp movement
+      and axle loading, which informed subsequent design changes.
+    </p>
+
+    <p>
+      The final mechanism was validated using Autodesk Fusion simulations under
+      the specified 140 N design load alongside physical testing of the operating
+      force and prototype function.
+    </p>
+
+    <div class="gallery">
+      <img src="wheelchair-project.png" alt="Wheelchair mechanism CAD and prototype">
+    </div>
+  </div>
+
+  <div class="project-detail" id="vibration">
+    <h2>02 — Cantilever Beam Vibration Analysis</h2>
+
+    <p>
+      Experimental vibration testing was carried out on a cantilever beam using
+      accelerometer and force-transducer measurements. MATLAB and LabVIEW were
+      used to analyse the dynamic response of the system.
+    </p>
+
+    <p>
+      The investigation included decay testing, broadband excitation and
+      stepped-sine testing. Experimental results were used to identify natural
+      frequencies, damping characteristics and vibration mode behaviour.
+    </p>
+
+    <div class="gallery">
+      <img src="vibration-decay.png" alt="Decay test acceleration response">
+      <img src="mode-shapes.png" alt="Cantilever beam vibration mode shapes">
+      <img src="stepped-sine.png" alt="Stepped sine vibration results">
+    </div>
+  </div>
+
+  <div class="project-detail" id="controls">
+    <h2>03 — Power Systems & Motor Control</h2>
+
+    <p>
+      MATLAB and Simulink were used to model and analyse AC and DC electrical
+      circuits, allowing numerical calculations to be compared directly with
+      simulated system behaviour.
+    </p>
+
+    <p>
+      A Permanent Magnet Synchronous Motor was also modelled using Direct Torque
+      Control. The effect of parameter changes on system performance was assessed
+      through speed, torque, flux linkage, overshoot and settling behaviour.
+    </p>
+
+    <div class="gallery">
+      <img src="simulink-model.png" alt="PMSM motor control model">
+      <img src="motor-results.png" alt="PMSM simulation output results">
+    </div>
+  </div>
+
+  <div class="project-detail" id="imeche">
+    <h2>04 — IMechE Design Challenge</h2>
+
+    <p>
+      This team engineering project involved the design, manufacture and testing
+      of a mechanical device for the IMechE Design Challenge.
+    </p>
+
+    <p>
+      The project required practical design development, CAD, component selection,
+      manufacturing and iterative testing to improve the reliability and
+      performance of the final device.
+    </p>
+
+    <div class="gallery">
+      <img src="imeche-project.png" alt="IMechE Design Challenge mechanical device">
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>Theo Currie</h3>
+
+  <p>
+    Mechanical Engineering | Swansea University
+  </p>
+
+  <p style="margin-top:10px;">
+    <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a>
+    &nbsp; | &nbsp;
+    <a href="mailto:YOUR_EMAIL_ADDRESS">Email</a>
+  </p>
+</footer>
+
+</body>
+</html>
