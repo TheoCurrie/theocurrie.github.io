@@ -265,7 +265,8 @@
 <nav>
 
   <a href="#about">About</a>
-  <a href="#projects">Projects</a>
+  <a href="#projects">University Projects</a>
+  <a href="#personal-projects">Personal Projects</a>
   <a href="#cad-practice">CAD Practice</a>
   <a href="#contact">Contact</a>
 
@@ -300,12 +301,11 @@
 </section>
 
 
-<!-- PROJECTS -->
+<!-- UNIVERSITY PROJECTS -->
 
 <section class="container" id="projects">
 
   <h2 class="section-title">Selected Engineering Projects</h2>
-
 
   <div class="projects">
 
@@ -453,7 +453,6 @@
       </div>
 
     </div>
-
 
   </div>
 
@@ -628,6 +627,131 @@
       <img
         src="imeche-cad.png"
         alt="First-year CAD assembly of IMechE Design Challenge vehicle"
+      >
+
+    </div>
+
+  </div>
+
+
+  <!-- PERSONAL ENGINEERING PROJECTS -->
+
+  <div class="project-detail" id="personal-projects">
+
+    <h2 class="section-title">Personal Engineering Projects</h2>
+
+    <p>
+      Independent engineering projects developed alongside my degree to apply
+      engineering theory, programming and simulation to practical technical problems.
+    </p>
+
+    <div class="projects">
+
+      <!-- PERSONAL PROJECT 01 -->
+
+      <div class="project-card">
+
+        <img
+          src="thermal-analysis-tool.png"
+          alt="MATLAB Thermal Analysis Tool"
+        >
+
+        <div class="project-content">
+
+          <div class="project-number">PERSONAL PROJECT 01</div>
+
+          <div class="project-year">2026</div>
+
+          <h3>Thermal Analysis Tool</h3>
+
+          <div class="skills">
+            MATLAB · App Designer · Heat Transfer · Thermal Analysis ·
+            Engineering Validation · Data Handling
+          </div>
+
+          <p>
+            Developed an interactive MATLAB engineering tool for steady-state
+            and transient thermal analysis of plane-wall systems. The application
+            uses a material-property database and calculates heat flux,
+            temperature distributions, transient response and Biot number.
+          </p>
+
+          <a class="button" href="#thermal-tool">
+            View Project
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- THERMAL ANALYSIS TOOL DETAIL -->
+
+  <div class="project-detail" id="thermal-tool">
+
+    <h2>Personal Project 01 — Thermal Analysis Tool</h2>
+
+    <div class="detail-year">
+      INDEPENDENT ENGINEERING PROJECT · 2026
+    </div>
+
+    <div class="skills">
+      MATLAB · App Designer · Heat Transfer · Thermal Resistance ·
+      Lumped Capacitance · Biot Number · Model Validation
+    </div>
+
+    <p>
+      I developed this MATLAB App Designer tool independently to apply
+      heat-transfer theory in an interactive engineering application.
+      Users can select engineering materials from an external material-property
+      database and define wall geometry, fluid temperatures and convection
+      coefficients.
+    </p>
+
+    <p>
+      The tool performs steady-state thermal-resistance calculations incorporating
+      conduction through a plane wall and convection at both surfaces. It calculates
+      heat flux and the temperature distribution through the material and presents
+      the results graphically.
+    </p>
+
+    <p>
+      A transient thermal model was also implemented using the lumped-capacitance
+      method. The application calculates the material's transient temperature
+      response and estimates the time required to reach within 1 °C of its
+      equilibrium temperature.
+    </p>
+
+    <p>
+      Model validity is assessed using the Biot number. A low-Biot aluminium
+      test case was checked independently using analytical calculations, with
+      the application producing a steady-state heat flux of approximately
+      666.33 W/m² and a transient time of approximately 28.2 minutes to within
+      1 °C of equilibrium.
+    </p>
+
+    <p>
+      A deliberately high-Biot benchmark case was also evaluated. The application
+      returned a Biot number of 2.0 and correctly identified that the lumped
+      transient model was outside its validity range. This validation process
+      was used to verify both the calculations and the limitations communicated
+      by the application.
+    </p>
+
+    <div class="gallery">
+
+      <img
+        src="thermal-analysis-tool.png"
+        alt="Thermal Analysis Tool MATLAB interface"
+      >
+
+      <img
+        src="thermal-validation.png"
+        alt="Thermal Analysis Tool high Biot number validation case"
       >
 
     </div>
