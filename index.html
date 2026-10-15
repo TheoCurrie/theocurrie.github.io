@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Theo Currie | Mechanical Engineering Portfolio</title>
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -89,7 +92,7 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 28px;
     }
 
@@ -168,6 +171,7 @@
       margin-top: 70px;
       padding-top: 30px;
       border-top: 1px solid #ccc;
+      scroll-margin-top: 80px;
     }
 
     .project-detail h2 {
@@ -222,7 +226,6 @@
     }
 
     @media (max-width: 600px) {
-
       header h1 {
         font-size: 2.2rem;
       }
@@ -231,23 +234,16 @@
         display: inline-block;
         margin: 5px 8px;
       }
-
     }
-
   </style>
-
 </head>
 
-
 <body>
-
 
 <!-- HEADER -->
 
 <header>
-
   <h1>Theo Currie</h1>
-
   <h2>Mechanical Engineering | Swansea University</h2>
 
   <p>
@@ -256,22 +252,250 @@
     Interested in mechanical design, simulation, manufacturing
     and hands-on engineering development.
   </p>
-
 </header>
-
 
 <!-- NAVIGATION -->
 
 <nav>
-
+  <a href="#current-projects">Current Projects</a>
   <a href="#about">About</a>
   <a href="#projects">University Projects</a>
   <a href="#personal-projects">Personal Projects</a>
   <a href="#cad-practice">CAD Practice</a>
   <a href="#contact">Contact</a>
-
 </nav>
 
+<!-- CURRENT PROJECTS -->
+
+<section class="container" id="current-projects">
+
+  <h2 class="section-title">Current Projects</h2>
+
+  <div class="projects">
+
+    <!-- CURRENT PROJECT 01 -->
+
+    <div class="project-card">
+
+      <img
+        src="flax-fin-design.png"
+        alt="Flax-fibre surfboard fin design concept"
+        loading="lazy"
+      >
+
+      <div class="project-content">
+
+        <div class="project-number">CURRENT PROJECT 01</div>
+        <div class="project-year">FINAL YEAR · 2026–2027</div>
+
+        <h3>Flax-Fibre Composite Surfboard Fin</h3>
+
+        <div class="skills">
+          Composite Materials · Compression Moulding ·
+          Mechanical Testing · Sustainable Design · CAD
+        </div>
+
+        <p>
+          Developing a compression-moulding process for flax–epoxy
+          composites, investigating how fibre arrangement affects
+          bending performance before manufacturing a surfboard fin.
+        </p>
+
+        <a class="button" href="#flax-dissertation">
+          View Project
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CURRENT PROJECT 02 -->
+
+    <div class="project-card">
+
+      <img
+        src="hydro-turbine-design.png"
+        alt="Hydrokinetic turbine CAD concept"
+        loading="lazy"
+      >
+
+      <div class="project-content">
+
+        <div class="project-number">CURRENT PROJECT 02</div>
+        <div class="project-year">FINAL YEAR · 2026–2027</div>
+
+        <h3>Hydrokinetic Energy Generation Device</h3>
+
+        <div class="skills">
+          Turbomachinery · Fusion 360 · Gear Design ·
+          Fluid Mechanics · Renewable Energy · Teamwork
+        </div>
+
+        <p>
+          Working as part of an engineering design team to develop
+          a compact water-powered electricity generation device,
+          incorporating a low-speed turbine, mechanical gearing
+          and a deployable support mechanism.
+        </p>
+
+        <a class="button" href="#hydro-project">
+          View Project
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FLAX DISSERTATION DETAIL -->
+
+  <div class="project-detail" id="flax-dissertation">
+
+    <h2>Current Project 01 — Flax-Fibre Composite Surfboard Fin</h2>
+
+    <div class="detail-year">
+      FINAL-YEAR DISSERTATION · ONGOING
+    </div>
+
+    <div class="skills">
+      Compression Moulding · Flax–Epoxy Composites ·
+      Fibre Orientation · Three-Point Bending ·
+      Failure Analysis · Sustainable Manufacturing
+    </div>
+
+    <p>
+      My final-year dissertation investigates the feasibility
+      of manufacturing a surfboard fin from locally sourced
+      flax fibres and epoxy resin. The main technical focus
+      is developing a repeatable compression-moulding process
+      and optimising the orientation and arrangement of flax
+      reinforcement to improve flexural strength and stiffness.
+    </p>
+
+    <p>
+      The planned first stage is to design and manufacture a
+      flat rectangular specimen mould. I will use this to
+      compare flax reinforcement configurations, including
+      chopped fibres and arrangements incorporating continuous
+      fibres aligned to resist bending loads.
+    </p>
+
+    <p>
+      Three-point bending tests will be used to assess
+      mechanical performance, alongside fracture-surface
+      examination to investigate fibre pull-out, fibre fracture,
+      matrix cracking and fibre–matrix interfacial debonding.
+      These results will help identify how fibre arrangement
+      influences strength, stiffness and failure behaviour.
+    </p>
+
+    <p>
+      Once a suitable flax arrangement has been identified,
+      I plan to manufacture comparable carbon-fibre and
+      glass-fibre specimens using the same compression-moulding
+      process as secondary performance benchmarks.
+    </p>
+
+    <p>
+      The final stage is to design a separate fin-shaped mould
+      and manufacture a flax-composite surfboard fin.
+      Water absorption, protective finishing and the
+      environmental implications of fibre preparation
+      are also important considerations when assessing
+      the material's suitability for marine use.
+    </p>
+
+    <div class="gallery">
+
+      <img
+        src="flax-fin-design.png"
+        alt="Flax composite surfboard fin concept or CAD"
+        loading="lazy"
+      >
+
+      <img
+        src="flax-composite-mould.png"
+        alt="Composite specimen compression mould or fibre layup"
+        loading="lazy"
+      >
+
+    </div>
+
+  </div>
+
+  <!-- HYDROKINETIC PROJECT DETAIL -->
+
+  <div class="project-detail" id="hydro-project">
+
+    <h2>Current Project 02 — Hydrokinetic Energy Generation Device</h2>
+
+    <div class="detail-year">
+      FINAL-YEAR GROUP DESIGN PROJECT · ONGOING
+    </div>
+
+    <div class="skills">
+      Hydrokinetic Turbine · Rotor Geometry ·
+      Gear Ratios · Mechanical Design ·
+      Flume Constraints · Fusion 360
+    </div>
+
+    <p>
+      This group design project involves developing a compact
+      hydrokinetic device to extract energy from flowing water.
+      The design is being developed around a small laboratory
+      flume, with attention to the effect of low water velocity
+      on rotor torque, rotational speed and practical
+      power generation.
+    </p>
+
+    <p>
+      The turbine concept uses a compact rotor with curved
+      blades designed to capture energy from the water flow.
+      Blade geometry, surface area and the interaction between
+      the rotor and surrounding water are being considered
+      to improve performance at flow velocities of
+      approximately 0.5 m/s.
+    </p>
+
+    <p>
+      A mechanical gear transmission is also being developed
+      to increase rotational speed between the turbine and
+      generator. Gear tooth numbers, pitch diameters,
+      module selection and overall transmission ratios
+      are being investigated using Autodesk Fusion 360.
+      The design must balance rotational speed with the
+      torque available from the turbine.
+    </p>
+
+    <p>
+      The mounting concept incorporates a vertical main shaft,
+      a sliding collar and two folding support arms connected
+      through three pivot joints. This allows the supports
+      to fold against the shaft for storage and deploy
+      outward to rest on the edges of the flume.
+    </p>
+
+    <p>
+      The ongoing design process combines CAD modelling,
+      mechanical calculations, design evaluation and
+      consideration of manufacturing and assembly constraints.
+      The overall aim is to develop a compact, practical
+      renewable-energy device suitable for testing
+      under controlled water-flow conditions.
+    </p>
+
+    <div class="gallery">
+
+      <img
+        src="hydro-turbine-design.png"
+        alt="Hydrokinetic turbine assembly showing rotor and gearing"
+        loading="lazy"
+      >
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- ABOUT -->
 
@@ -282,24 +506,25 @@
   <div class="about">
 
     <p>
-      I am a Mechanical Engineering student at Swansea University with a strong
-      interest in mechanical design, engineering simulation and manufacturing.
-      I particularly enjoy projects that involve taking an engineering problem
-      from initial concept through analysis, prototyping and physical testing.
+      I am a Mechanical Engineering student at Swansea University
+      with a strong interest in mechanical design, engineering
+      simulation and manufacturing. I particularly enjoy projects
+      that involve taking an engineering problem from initial
+      concept through analysis, prototyping and physical testing.
     </p>
 
     <br>
 
     <p>
-      Through my degree I have developed experience using Autodesk Fusion 360,
-      MATLAB, Simulink, finite element analysis, mechanical testing and
-      prototyping across a range of individual and team engineering projects.
+      Through my degree I have developed experience using
+      Autodesk Fusion 360, MATLAB, Simulink, finite element
+      analysis, mechanical testing and prototyping across
+      a range of individual and team engineering projects.
     </p>
 
   </div>
 
 </section>
-
 
 <!-- UNIVERSITY PROJECTS -->
 
@@ -308,7 +533,6 @@
   <h2 class="section-title">Selected Engineering Projects</h2>
 
   <div class="projects">
-
 
     <!-- PROJECT 01 -->
 
@@ -322,20 +546,21 @@
       <div class="project-content">
 
         <div class="project-number">PROJECT 01</div>
-
         <div class="project-year">SECOND YEAR</div>
 
         <h3>Wheelchair Assistive Device</h3>
 
         <div class="skills">
-          Mechanical Design · Fusion 360 · CAD · FMEA · Prototyping
+          Mechanical Design · Fusion 360 · CAD ·
+          FMEA · Prototyping
         </div>
 
         <p>
-          Designed and developed an adjustable mechanical locking mechanism for
-          a wheelchair-mounted assistive device. The design was developed through
-          calculations, CAD modelling, iterative prototyping, FMEA, simulation
-          and physical testing.
+          Designed and developed an adjustable mechanical
+          locking mechanism for a wheelchair-mounted assistive
+          device. The design was developed through calculations,
+          CAD modelling, iterative prototyping, FMEA,
+          simulation and physical testing.
         </p>
 
         <a class="button" href="#wheelchair">
@@ -343,9 +568,7 @@
         </a>
 
       </div>
-
     </div>
-
 
     <!-- PROJECT 02 -->
 
@@ -359,18 +582,19 @@
       <div class="project-content">
 
         <div class="project-number">PROJECT 02</div>
-
         <div class="project-year">SECOND YEAR</div>
 
         <h3>Cantilever Beam Vibration Analysis</h3>
 
         <div class="skills">
-          MATLAB · LabVIEW · Vibration Analysis · Mechanical Testing · Data Analysis
+          MATLAB · LabVIEW · Vibration Analysis ·
+          Mechanical Testing · Data Analysis
         </div>
 
         <p>
-          Investigated the dynamic response of a cantilever beam using experimental
-          and theoretical methods, analysing accelerometer and force-transducer data
+          Investigated the dynamic response of a cantilever
+          beam using experimental and theoretical methods,
+          analysing accelerometer and force-transducer data
           to determine natural frequencies and damping behaviour.
         </p>
 
@@ -379,9 +603,7 @@
         </a>
 
       </div>
-
     </div>
-
 
     <!-- PROJECT 03 -->
 
@@ -395,19 +617,20 @@
       <div class="project-content">
 
         <div class="project-number">PROJECT 03</div>
-
         <div class="project-year">SECOND YEAR</div>
 
         <h3>Power Systems & Motor Control</h3>
 
         <div class="skills">
-          MATLAB · Simulink · Control Systems · PMSM · Engineering Simulation
+          MATLAB · Simulink · Control Systems ·
+          PMSM · Engineering Simulation
         </div>
 
         <p>
-          Modelled AC and DC electrical systems using MATLAB and Simulink and
-          investigated a Permanent Magnet Synchronous Motor using Direct Torque
-          Control, analysing torque, speed, flux and transient behaviour.
+          Modelled AC and DC electrical systems using MATLAB
+          and Simulink and investigated a Permanent Magnet
+          Synchronous Motor using Direct Torque Control,
+          analysing torque, speed, flux and transient behaviour.
         </p>
 
         <a class="button" href="#controls">
@@ -415,9 +638,7 @@
         </a>
 
       </div>
-
     </div>
-
 
     <!-- PROJECT 04 -->
 
@@ -431,19 +652,21 @@
       <div class="project-content">
 
         <div class="project-number">PROJECT 04</div>
-
         <div class="project-year">FIRST YEAR</div>
 
         <h3>IMechE Design Challenge</h3>
 
         <div class="skills">
-          Fusion 360 · Engineering Design · Manufacturing · Prototyping · Testing · Teamwork
+          Fusion 360 · Engineering Design · Manufacturing ·
+          Prototyping · Testing · Teamwork
         </div>
 
         <p>
-          Worked as part of an engineering team to design, manufacture and test
-          a mechanical device for the IMechE Design Challenge, developing the
-          design through iterative testing and practical engineering decisions.
+          Worked as part of an engineering team to design,
+          manufacture and test a mechanical device for the
+          IMechE Design Challenge, developing the design
+          through iterative testing and practical
+          engineering decisions.
         </p>
 
         <a class="button" href="#imeche">
@@ -451,11 +674,9 @@
         </a>
 
       </div>
-
     </div>
 
   </div>
-
 
   <!-- WHEELCHAIR PROJECT DETAIL -->
 
@@ -468,23 +689,26 @@
     </div>
 
     <p>
-      This individual project involved developing the mechanical locking and
-      adjustment mechanism for a wheelchair-mounted assistive device.
-      A focused product design specification was created covering structural,
+      This individual project involved developing the
+      mechanical locking and adjustment mechanism for a
+      wheelchair-mounted assistive device. A focused product
+      design specification was created covering structural,
       usability and manufacturing requirements.
     </p>
 
     <p>
-      Several design concepts were assessed before progressing the selected
-      clamp and gear locking mechanism into CAD and prototype development.
-      FMEA was used to identify failure risks including gear slip, clamp movement
-      and axle loading, which informed subsequent design changes.
+      Several design concepts were assessed before progressing
+      the selected clamp and gear locking mechanism into CAD
+      and prototype development. FMEA was used to identify
+      failure risks including gear slip, clamp movement and
+      axle loading, which informed subsequent design changes.
     </p>
 
     <p>
-      The final mechanism was validated using Autodesk Fusion simulations under
-      the specified 140 N design load alongside physical testing of the operating
-      force and prototype function.
+      The final mechanism was validated using Autodesk Fusion
+      simulations under the specified 140 N design load
+      alongside physical testing of the operating force
+      and prototype function.
     </p>
 
     <div class="gallery">
@@ -503,7 +727,6 @@
 
   </div>
 
-
   <!-- VIBRATION PROJECT DETAIL -->
 
   <div class="project-detail" id="vibration">
@@ -515,15 +738,17 @@
     </div>
 
     <p>
-      Experimental vibration testing was carried out on a cantilever beam using
-      accelerometer and force-transducer measurements. MATLAB and LabVIEW were
-      used to analyse the dynamic response of the system.
+      Experimental vibration testing was carried out on a
+      cantilever beam using accelerometer and force-transducer
+      measurements. MATLAB and LabVIEW were used to analyse
+      the dynamic response of the system.
     </p>
 
     <p>
-      The investigation included decay testing, broadband excitation and
-      stepped-sine testing. Experimental results were used to identify natural
-      frequencies, damping characteristics and vibration mode behaviour.
+      The investigation included decay testing, broadband
+      excitation and stepped-sine testing. Experimental
+      results were used to identify natural frequencies,
+      damping characteristics and vibration mode behaviour.
     </p>
 
     <div class="gallery">
@@ -547,7 +772,6 @@
 
   </div>
 
-
   <!-- POWER SYSTEMS PROJECT DETAIL -->
 
   <div class="project-detail" id="controls">
@@ -559,15 +783,18 @@
     </div>
 
     <p>
-      MATLAB and Simulink were used to model and analyse AC and DC electrical
-      circuits, allowing numerical calculations to be compared directly with
-      simulated system behaviour.
+      MATLAB and Simulink were used to model and analyse
+      AC and DC electrical circuits, allowing numerical
+      calculations to be compared directly with simulated
+      system behaviour.
     </p>
 
     <p>
-      A Permanent Magnet Synchronous Motor was also modelled using Direct Torque
-      Control. The effect of parameter changes on system performance was assessed
-      through speed, torque, flux linkage, overshoot and settling behaviour.
+      A Permanent Magnet Synchronous Motor was also modelled
+      using Direct Torque Control. The effect of parameter
+      changes on system performance was assessed through
+      speed, torque, flux linkage, overshoot and settling
+      behaviour.
     </p>
 
     <div class="gallery">
@@ -586,7 +813,6 @@
 
   </div>
 
-
   <!-- IMECHE PROJECT DETAIL -->
 
   <div class="project-detail" id="imeche">
@@ -598,23 +824,25 @@
     </div>
 
     <p>
-      Completed during the first year of my Mechanical Engineering degree,
-      this team project involved designing, manufacturing and testing a
-      mechanical device for the IMechE Design Challenge.
+      Completed during the first year of my Mechanical
+      Engineering degree, this team project involved
+      designing, manufacturing and testing a mechanical
+      device for the IMechE Design Challenge.
     </p>
 
     <p>
-      The project provided early practical experience in Autodesk Fusion 360,
-      mechanical design, component selection and manufacturing. The design
-      was developed through prototype testing and modification to improve
+      The project provided early practical experience in
+      Autodesk Fusion 360, mechanical design, component
+      selection and manufacturing. The design was developed
+      through prototype testing and modification to improve
       the reliability and performance of the final device.
     </p>
 
     <p>
-      Working as part of the engineering team also developed my experience
-      of collaborative design, translating concepts into manufacturable
-      components and making practical engineering decisions under project
-      constraints.
+      Working as part of the engineering team also developed
+      my experience of collaborative design, translating
+      concepts into manufacturable components and making
+      practical engineering decisions under project constraints.
     </p>
 
     <div class="gallery">
@@ -633,7 +861,6 @@
 
   </div>
 
-
   <!-- PERSONAL ENGINEERING PROJECTS -->
 
   <div class="project-detail" id="personal-projects">
@@ -641,8 +868,9 @@
     <h2 class="section-title">Personal Engineering Projects</h2>
 
     <p>
-      Independent engineering projects developed alongside my degree to apply
-      engineering theory, programming and simulation to practical technical problems.
+      Independent engineering projects developed alongside
+      my degree to apply engineering theory, programming
+      and simulation to practical technical problems.
     </p>
 
     <div class="projects">
@@ -659,21 +887,23 @@
         <div class="project-content">
 
           <div class="project-number">PERSONAL PROJECT 01</div>
-
           <div class="project-year">2026</div>
 
           <h3>Thermal Analysis Tool</h3>
 
           <div class="skills">
-            MATLAB · App Designer · Heat Transfer · Thermal Analysis ·
-            Engineering Validation · Data Handling
+            MATLAB · App Designer · Heat Transfer ·
+            Thermal Analysis · Engineering Validation ·
+            Data Handling
           </div>
 
           <p>
-            Developed an interactive MATLAB engineering tool for steady-state
-            and transient thermal analysis of plane-wall systems. The application
-            uses a material-property database and calculates heat flux,
-            temperature distributions, transient response and Biot number.
+            Developed an interactive MATLAB engineering tool
+            for steady-state and transient thermal analysis
+            of plane-wall systems. The application uses a
+            material-property database and calculates heat
+            flux, temperature distributions, transient
+            response and Biot number.
           </p>
 
           <a class="button" href="#thermal-tool">
@@ -681,13 +911,10 @@
           </a>
 
         </div>
-
       </div>
 
     </div>
-
   </div>
-
 
   <!-- THERMAL ANALYSIS TOOL DETAIL -->
 
@@ -700,53 +927,65 @@
     </div>
 
     <div class="skills">
-      MATLAB · App Designer · Heat Transfer · Thermal Resistance ·
-      Lumped Capacitance · Biot Number · Model Validation
+      MATLAB · App Designer · Heat Transfer ·
+      Thermal Resistance · Lumped Capacitance ·
+      Biot Number · Model Validation
     </div>
 
     <p>
-      I developed this MATLAB App Designer tool independently to apply
-      heat-transfer theory in an interactive engineering application.
-      Users can select engineering materials from an external material-property
-      database and define wall geometry, fluid temperatures and convection
-      coefficients.
+      I developed this MATLAB App Designer tool independently
+      to apply heat-transfer theory in an interactive
+      engineering application. Users can select engineering
+      materials from an external material-property database
+      and define wall geometry, fluid temperatures and
+      convection coefficients.
     </p>
 
     <p>
-      The tool performs steady-state thermal-resistance calculations incorporating
-      conduction through a plane wall and convection at both surfaces. It calculates
-      heat flux and the temperature distribution through the material and presents
-      the results graphically.
+      The tool performs steady-state thermal-resistance
+      calculations incorporating conduction through a
+      plane wall and convection at both surfaces.
+      It calculates heat flux and the temperature distribution
+      through the material and presents the results graphically.
     </p>
 
     <p>
-      A transient thermal model was also implemented using the lumped-capacitance
-      method. The application calculates the material's transient temperature
-      response and estimates the time required to reach within 1 °C of its
-      equilibrium temperature.
+      A transient thermal model was also implemented using
+      the lumped-capacitance method. The application calculates
+      the material's transient temperature response and
+      estimates the time required to reach within 1 °C
+      of its equilibrium temperature.
     </p>
 
     <p>
-      Model validity is assessed using the Biot number. A low-Biot aluminium
-      test case was checked independently using analytical calculations, with
-      the application producing a steady-state heat flux of approximately
-      666.33 W/m² and a transient time of approximately 28.2 minutes to within
-      1 °C of equilibrium.
+      Model validity is assessed using the Biot number.
+      A low-Biot aluminium test case was checked independently
+      using analytical calculations, with the application
+      producing a steady-state heat flux of approximately
+      666.33 W/m² and a transient time of approximately
+      28.2 minutes to within 1 °C of equilibrium.
     </p>
 
     <p>
-      A deliberately high-Biot benchmark case was also evaluated. The application
-      returned a Biot number of 2.0 and correctly identified that the lumped
-      transient model was outside its validity range. This validation process
-      was used to verify both the calculations and the limitations communicated
+      A deliberately high-Biot benchmark case was also
+      evaluated. The application returned a Biot number
+      of 2.0 and correctly identified that the lumped
+      transient model was outside its validity range.
+      This validation process was used to verify both
+      the calculations and the limitations communicated
       by the application.
     </p>
- <a href="https://github.com/TheoCurrie/thermal-analysis-tool"
-     target="_blank"
-     rel="noopener noreferrer">
-    View Thermal Analysis Tool on GitHub
-  </a>
-</a>
+
+    <p>
+      <a
+        href="https://github.com/TheoCurrie/thermal-analysis-tool"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Thermal Analysis Tool on GitHub
+      </a>
+    </p>
+
     <div class="gallery">
 
       <img
@@ -763,7 +1002,6 @@
 
   </div>
 
-
   <!-- CAD PRACTICE -->
 
   <div class="project-detail" id="cad-practice">
@@ -771,16 +1009,19 @@
     <h2>CAD Practice & Development</h2>
 
     <p>
-      Alongside my university engineering projects, I use Autodesk Fusion 360
-      for independent CAD modelling practice. These models allow me to develop
-      my skills beyond assessed coursework and practise increasingly complex
-      geometry, components and assemblies.
+      Alongside my university engineering projects,
+      I use Autodesk Fusion 360 for independent CAD
+      modelling practice. These models allow me to
+      develop my skills beyond assessed coursework
+      and practise increasingly complex geometry,
+      components and assemblies.
     </p>
 
     <p>
-      Independent modelling has helped me build confidence with CAD workflows
-      and continue developing the design skills used throughout my engineering
-      projects.
+      Independent modelling has helped me build
+      confidence with CAD workflows and continue
+      developing the design skills used throughout
+      my engineering projects.
     </p>
 
     <div class="gallery">
@@ -799,9 +1040,7 @@
 
   </div>
 
-
 </section>
-
 
 <!-- FOOTER -->
 
@@ -816,8 +1055,9 @@
   <p style="margin-top:10px;">
 
     <a
-      href="YOUR_LINKEDIN_URL"
+      href="https://www.linkedin.com/in/theo-currie-387a9a229"
       target="_blank"
+      rel="noopener noreferrer"
     >
       LinkedIn
     </a>
@@ -832,7 +1072,6 @@
 
 </footer>
 
-
 </body>
-
 </html>
+
